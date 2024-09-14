@@ -7,7 +7,7 @@ function stringChop(str, size) {
 	  chunks.push(s);
   }
 	let s=str.slice(i,str.length+1);
-	chuks.push(s)
+	chunks.push(s)
 	return chunks;
 }
 // Do not change the code belo
