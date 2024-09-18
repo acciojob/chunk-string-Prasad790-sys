@@ -1,16 +1,16 @@
 function stringChop(str, size) {
-  let chunks=[];
-   let i=0;
-  while(i+size<str.length){
-	  let s=str.slice(i,size);
-	  i+=size;
-	  chunks.push(s);
+  let chunks = [];
+  let i = 0;
+
+  while (i < str.length) {
+    let s = str.slice(i, i + size); // Use i + size to get the correct slice
+    chunks.push(s);
+    i += size;
   }
-	let s=str.slice(i,str.length+1);
-	chunks.push(s)
-	return chunks;
+
+  return chunks;
 }
-// Do not change the code belo
+// Do not change the code bel
 const str = prompt("Enter String.");
 const size = prompt("Enter Chunk Size.");
 alert(stringChop(str, size));
